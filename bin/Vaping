@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/Vaping'
+
+Vaping::CLI.new.call

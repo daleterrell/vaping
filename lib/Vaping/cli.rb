@@ -1,0 +1,2 @@
+class Vaping::CLI
+end
