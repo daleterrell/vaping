@@ -9,9 +9,10 @@ class Vaping::CLI
   
   def show_news
     puts 
-    1. dumbass
-    2. at it again
-    @news = Vaping::News.today 
+    @news = Vaping::News.today
+    @news.each.with_index(1) do |news, i|
+      puts "#{i}. #{news.headline} - #{news.story}"
+    end
   end
   
   

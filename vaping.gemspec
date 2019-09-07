@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "vaping/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "vaping"
+  spec.name          = "vaping news"
   spec.version       = Vaping::VERSION
   spec.authors       = ["'Dale Terrell'"]
   spec.email         = ["'tragicid@gmail.com'"]
