@@ -6,3 +6,4 @@ module Vaping
 end
 
 require_relative './Vaping/cli'
+require_relative './Vaping/news'

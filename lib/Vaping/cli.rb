@@ -9,19 +9,23 @@ class Vaping::CLI
   
   def show_news
     puts 
-    1. "D"  
-    2. "K" 
+    1. dumbass
+    2. at it again
+    @news = Vaping::News.today 
   end
   
+  
   def menu
-    puts "Which story do you wanna read? You can exit by typing 'exit'."
+    input = nil
     while input != "exit"
-      input = gets.strip 
-      case input 
-      when "1"
-        puts "More info on 1..."
-      when "2"
-        puts "More info on 2..."
+      puts "Which story would you like to read?  Or, type exit to exit."
+      input = gets.strip.downcase
+      if input.to_i > 0
+        puts @news[input.to_i-1]
+      elsif input == "news"
+        show_news
+      else
+        puts "Dunno what you want, type news or exit"
       end
     end
   end
