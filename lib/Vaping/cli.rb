@@ -22,7 +22,8 @@ class Vaping::CLI
       puts "Which story would you like to read?  Or, type exit to exit."
       input = gets.strip.downcase
       if input.to_i > 0
-        puts @news[input.to_i-1]
+        news = @news[input.to_i-1]
+        puts "#{news.headline} - #{news.story}"
       elsif input == "news"
         show_news
       else

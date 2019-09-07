@@ -1,8 +1,8 @@
 class Vaping::News 
-  attr_accessor 
+  attr_accessor :headline, :story
   
   def self.today
-    puts 
+    Vaping::NewsScraper.new
     [news1, news2]
   end
   
