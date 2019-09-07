@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'pry'
+
 require_relative "./Vaping/version"
 
 module Vaping
