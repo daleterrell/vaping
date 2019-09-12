@@ -1,5 +1,5 @@
-require 'nokogiri'
-require 'pry'
+# require 'nokogiri'
+# require 'pry'
 
 require_relative "./Vaping/version"
 
